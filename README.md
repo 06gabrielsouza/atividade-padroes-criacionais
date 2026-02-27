@@ -1,21 +1,26 @@
 # Atividade: Padrões de Projeto Criacionais
 
-Este repositório contém a implementação prática de dois padrões de projeto criacionais como parte da atividade de pesquisa autoral.
+Este repositório contém a parte prática da atividade de pesquisa sobre Design Patterns Criacionais. 
 
-## Padrões Implementados
+## 🚀 Padrões Implementados
 
-1. **Singleton**: Garante que a classe `ConexaoBanco` tenha apenas uma instância em todo o ciclo de vida da aplicação.
-2. **Factory Method**: Define uma interface para criar objetos de transporte, permitindo que as subclasses (`LogisticaTerrestre` e `LogisticaMaritima`) decidam qual tipo de transporte instanciar.
+Para demonstrar a aplicação real dos conceitos estudados, implementei dois padrões clássicos em Python:
 
-## Como executar
+1. **Singleton (`singleton.py`)**: 
+   - **Objetivo:** Garantir que a classe `ConexaoBanco` tenha uma única instância global.
+   - **Funcionamento:** O código impede a criação de múltiplos objetos de conexão, economizando recursos e mantendo a consistência.
 
-Certifique-se de ter o Python instalado.
+2. **Factory Method (`factory_method.py`)**: 
+   - **Objetivo:** Desacoplar a lógica de negócio do tipo específico de objeto criado.
+   - **Funcionamento:** Simula um sistema de logística que fabrica transportes (Caminhão ou Navio) de forma dinâmica, facilitando a expansão do sistema no futuro.
+
+## 🛠️ Como executar os códigos
+
+Certifique-se de ter o Python instalado em sua máquina.
 
 ```bash
-# Para testar o Singleton
+# Para testar o padrão Singleton
 python singleton.py
 
-# Para testar o Factory Method
+# Para testar o padrão Factory Method
 python factory_method.py
-
----
